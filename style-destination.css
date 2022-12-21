@@ -1,0 +1,174 @@
+:root {
+  --white: #ffffff;
+  --grey: #d0d6f9;
+  --dark: #0b0d17;
+}
+
+body {
+  background-image: url(./assets/destination/background-destination-mobile.jpg);
+  height: auto;
+  gap: 24px;
+}
+
+main {
+  width: 100%;
+}
+
+#content-section {
+  align-items: center;
+  gap: 0;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.nav {
+  margin-bottom: 32px;
+}
+
+.nav-opacity {
+  opacity: 0.25;
+}
+
+.planet {
+  height: 170px;
+  width: 170px;
+  margin-bottom: 26px;
+}
+
+.nav-planets {
+  margin-bottom: 20px;
+}
+
+.choice-planet {
+  height: 28px;
+  color: var(--white);
+  display: flex;
+  gap: 27px;
+}
+
+.nav-choice {
+  list-style-type: none;
+}
+
+.nav-choice a {
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+
+.nav-choice a::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  border-bottom: 3px solid var(--white);
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
+.nav-choice a:hover::after {
+  display: block;
+  opacity: 0.2;
+}
+
+.nav-choice a.active::after {
+  display: block;
+  opacity: 1;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 64px;
+}
+
+p {
+  color: var(--grey);
+  padding-bottom: 32px;
+  width: 87vw;
+  border-bottom: 1px solid #383b4b;
+}
+
+#travel-section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 58px;
+}
+
+.avg-distance,
+.travel-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.subheading2 {
+  line-height: 17px;
+  letter-spacing: 2.36px;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url(./assets/destination/background-destination-tablet.jpg);
+    gap: 40px;
+  }
+  #content-section {
+    margin-bottom: 0;
+  }
+  .nav-text {
+    width: 100%;
+    display: flex;
+    gap: 19px;
+  }
+
+  .nav {
+    margin-bottom: 60px;
+  }
+
+  .nav .bold-nav {
+    display: block;
+  }
+
+  .planet {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 53px;
+  }
+
+  .nav-planets {
+    margin-bottom: 32px;
+  }
+
+  .nav-choice a {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+
+  h1 {
+    font-size: 80px;
+    line-height: 92px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    width: 74.6vw;
+    line-height: 28px;
+    padding-bottom: 49px;
+  }
+
+  #travel-section {
+    flex-direction: row;
+    padding-top: 28px;
+    align-content: space-around;
+    margin-bottom: 62px;
+    gap: 79px;
+  }
+
+  .subheading2 {
+    font-size: 14px;
+    color: var(--grey);
+  }
+}
