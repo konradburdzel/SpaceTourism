@@ -85,6 +85,7 @@ h1 {
 p {
   color: var(--grey);
   padding-bottom: 32px;
+  margin-bottom: 32px;
   width: 87vw;
   border-bottom: 1px solid #383b4b;
 }
@@ -170,5 +171,59 @@ p {
   .subheading2 {
     font-size: 14px;
     color: var(--grey);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    background-image: url(./assets/destination/background-destination-desktop.jpg);
+    gap: 76px;
+  }
+
+  main {
+    display: block;
+  }
+
+  #content-section {
+    display: grid;
+    grid-template-columns: repeat(2, 445px);
+    grid-template-rows: 98px 71px 129px 182px;
+    grid-template-areas:
+      "title empty"
+      "pic destinations"
+      "pic planet"
+      "pic description"
+      "pic travel";
+    margin-left: 160px;
+    column-gap: 157px;
+    align-items: flex-start;
+  }
+
+  .title-description {
+    grid-area: title;
+  }
+
+  .planet {
+    grid-area: pic;
+    width: 445px;
+    height: 445px;
+    margin: 33px 0 0 65px;
+  }
+
+  .nav-planets {
+    grid-area: destinations;
+  }
+
+  .planet-destination {
+    grid-area: planet;
+  }
+
+  .planet-description {
+    grid-area: description;
+    width: auto;
+  }
+
+  #travel-section {
+    grid-area: travel;
   }
 }
