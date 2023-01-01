@@ -111,8 +111,7 @@ a {
 body {
   box-sizing: border-box;
   background-image: url(./assets/home/background-home-mobile.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -143,7 +142,7 @@ header {
 }
 
 .hamburger {
-  position: relative;
+  /* position: relative; */
   z-index: 2;
   cursor: pointer;
   background-image: url(./assets/shared/icon-hamburger.svg);
@@ -155,6 +154,9 @@ header {
 
 .hamburger.active {
   background-image: url(./assets/shared/icon-close.svg);
+  position: fixed;
+  top: 35px;
+  right: 25px;
 }
 
 .menu {
@@ -242,6 +244,7 @@ main {
   letter-spacing: 1.25px;
   font-size: 26px;
   text-decoration: none;
+  z-index: 2;
 }
 
 .button:hover::before {

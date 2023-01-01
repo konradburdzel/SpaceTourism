@@ -6,12 +6,13 @@
 
 body {
   background-image: url(./assets/destination/background-destination-mobile.jpg);
-  height: auto;
+  background-size: cover;
   gap: 24px;
 }
 
 main {
   width: 100%;
+  height: auto;
 }
 
 #content-section {
@@ -94,7 +95,6 @@ p {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-bottom: 58px;
 }
 
 .avg-distance,
@@ -114,6 +114,7 @@ p {
   body {
     background-image: url(./assets/destination/background-destination-tablet.jpg);
     gap: 40px;
+    height: auto;
   }
   #content-section {
     margin-bottom: 0;
@@ -164,7 +165,6 @@ p {
     flex-direction: row;
     padding-top: 28px;
     align-content: space-around;
-    margin-bottom: 62px;
     gap: 79px;
   }
 
@@ -178,13 +178,23 @@ p {
   body {
     background-image: url(./assets/destination/background-destination-desktop.jpg);
     gap: 76px;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  header {
+    width: 100%;
   }
 
   main {
-    display: block;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   #content-section {
+    width: auto;
+    box-sizing: content-box;
     display: grid;
     grid-template-columns: repeat(2, 445px);
     grid-template-rows: 98px 71px 129px 182px;
@@ -194,7 +204,6 @@ p {
       "pic planet"
       "pic description"
       "pic travel";
-    margin-left: 160px;
     column-gap: 157px;
     align-items: flex-start;
   }
