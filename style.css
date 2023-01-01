@@ -235,7 +235,6 @@ main {
   height: 150px;
   border-radius: 50%;
   background-color: var(--white);
-  /* position: relative; */
   z-index: 0;
 }
 
@@ -256,8 +255,8 @@ main {
   transform: translate(-50%, -50%);
   background: #ffffff;
   mix-blend-mode: normal;
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   opacity: 0.2;
 }
@@ -499,10 +498,6 @@ main {
 
   p {
     font-size: 18px;
-  }
-
-  #button-section {
-    margin-top: 20px;
   }
 
   .button {
