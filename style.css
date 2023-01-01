@@ -256,8 +256,8 @@ main {
   transform: translate(-50%, -50%);
   background: #ffffff;
   mix-blend-mode: normal;
-  width: 220px;
-  height: 220px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   opacity: 0.2;
 }
