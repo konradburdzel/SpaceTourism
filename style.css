@@ -434,7 +434,7 @@ main {
 
 @media only screen and (min-width: 1366px) {
   body {
-    gap: 40%;
+    gap: 30%;
     padding: 40px 0 40px 55px;
     background-image: url(/assets/home/background-home-desktop.jpg);
   }
