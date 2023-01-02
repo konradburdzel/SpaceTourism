@@ -10,7 +10,7 @@ body {
   gap: 24px;
 }
 
-main {
+#main-content {
   width: 100%;
   height: auto;
 }
@@ -182,11 +182,11 @@ p {
     height: 100vh;
   }
 
-  header {
+  #main-header {
     width: 100%;
   }
 
-  main {
+  #main-content {
     display: flex;
     justify-content: center;
     margin: 0 auto;
