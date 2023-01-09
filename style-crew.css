@@ -1,0 +1,144 @@
+:root {
+  --white: #ffffff;
+  --grey: #d0d6f9;
+  --dark: #0b0d17;
+  --border: #383b4b;
+}
+
+body {
+  background-image: url(./assets/crew/background-crew-mobile.jpg);
+  background-size: cover;
+}
+
+#main-content {
+  display: flex;
+  gap: 32px;
+}
+.nav-opacity {
+  opacity: 0.25;
+}
+
+.img-container {
+  width: 327px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.crew-img {
+  width: 177px;
+  height: 220px;
+}
+
+.border-img {
+  width: 100%;
+  border-bottom: 1px solid var(--border);
+}
+
+.dot {
+  margin: 0 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--white);
+  display: inline-block;
+  opacity: 0.17;
+}
+
+.dot.active {
+  opacity: 1;
+}
+
+.profession {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-bottom: 8px;
+}
+
+.crew {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.crew-describe {
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--grey);
+  text-align: center;
+  width: 327px;
+  margin-bottom: 84px;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url(./assets/crew/background-crew-tablet.jpg);
+    gap: 40px;
+    height: 1024px;
+    overflow: hidden;
+  }
+
+  #main-content {
+    width: 100%;
+    height: auto;
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  .crew-img {
+    width: 60vw;
+    /* height: minmax(56vh, 660px); */
+  }
+
+  .title-description {
+    width: 100%;
+    align-items: flex-start;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    margin-bottom: 20px;
+  }
+
+  .text-description {
+    width: 60%;
+  }
+
+  .profession {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .crew {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .crew-describe {
+    font-size: 16px;
+    line-height: 28px;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .dis {
+    display: inline-block;
+  }
+
+  .text-description {
+    order: 1;
+  }
+
+  .dots {
+    order: 2;
+  }
+
+  .img-container {
+    order: 3;
+  }
+}
