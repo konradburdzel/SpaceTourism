@@ -1,0 +1,26 @@
+@media only screen and (min-width: 1366px) {
+  body {
+    gap: 110px;
+  }
+
+  #main-content {
+    grid-template-columns: 700px 30vw;
+    column-gap: 0;
+  }
+
+  /* .crew {
+    font-size: 56px;
+    line-height: 64px;
+  } */
+
+  .crew-describe {
+    width: 70%;
+  }
+
+  .img-container {
+    grid-area: img-container;
+    width: 31vw;
+    height: 73vh;
+    place-self: center;
+  }
+}
