@@ -139,6 +139,7 @@ body {
 #logo img {
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 
 .hamburger {
@@ -159,11 +160,13 @@ body {
 }
 
 .menu {
+  position: fixed;
+  top: 0;
+  right: 0;
   z-index: 1;
   box-sizing: border-box;
   width: clamp(50%, 60%, 70%);
   height: 100vh;
-  width: auto;
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(40.7742px);
   display: flex;
@@ -326,6 +329,7 @@ main {
     transform: translate(0);
     flex-direction: row;
     height: 96px;
+    width: auto;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.7742px);
     padding: 0 29px;

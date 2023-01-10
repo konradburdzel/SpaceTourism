@@ -1,3 +1,8 @@
+//all
+const logo = document.querySelector('#logo').addEventListener('click', () => {
+    window.location.href = "index.html";
+})
+
 
 //mobile
 const hamburgerMenu = document.querySelector('.hamburger');
@@ -19,5 +24,6 @@ const getActive = (e) => {
 menuLinks.forEach(menuLink => {
     menuLink.addEventListener('click', getActive);
 })
+
 
 
