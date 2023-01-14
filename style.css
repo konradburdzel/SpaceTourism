@@ -126,6 +126,7 @@ body {
   display: flex;
   justify-content: end;
   align-items: center;
+  position: relative;
 }
 
 #main-header {
@@ -160,7 +161,7 @@ body {
 }
 
 .menu {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   z-index: 1;
@@ -309,7 +310,6 @@ main {
   }
 
   #main-header {
-    align-items: initial;
     margin-top: 0;
     align-items: center;
   }
@@ -318,6 +318,10 @@ main {
   #logo img {
     width: 48px;
     height: 48px;
+  }
+
+  .menu {
+    position: static;
   }
 
   .hamburger {
@@ -449,7 +453,6 @@ main {
   }
 
   .menu {
-    position: absolute;
     width: 60%;
     padding: 0 165px 0 123px;
   }
