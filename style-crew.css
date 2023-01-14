@@ -47,6 +47,10 @@ body {
   opacity: 0.17;
 }
 
+.dot:hover {
+  opacity: 0.5;
+}
+
 .dot.active {
   opacity: 1;
 }
