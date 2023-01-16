@@ -204,6 +204,9 @@ body {
   img[src="/assets/technology/image-launch-vehicle-landscape.jpg"] {
     content: url("/assets/technology/image-launch-vehicle-portrait.jpg");
   }
+  img[src="/assets/technology/image-spaceport-landscape.jpg"] {
+    content: url("/assets/technology/image-spaceport-portrait.jpg");
+  }
 
   .img-container {
     grid-area: img-container;
