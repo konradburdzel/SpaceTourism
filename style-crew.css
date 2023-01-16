@@ -14,6 +14,7 @@ body {
 #main-content {
   gap: 32px;
   justify-content: flex-start;
+  width: 100%;
 }
 .nav-opacity {
   opacity: 0.25;
@@ -78,8 +79,21 @@ body {
   line-height: 25px;
   color: var(--grey);
   text-align: center;
-  width: 327px;
+  /* width: 327px; */
   margin-bottom: auto;
+}
+
+.description-width-commander {
+  width: 90%;
+}
+.description-width-specjalist {
+  width: 95%;
+}
+.description-width-pilot {
+  width: 94%;
+}
+.description-width-engineer {
+  width: 96%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -107,7 +121,7 @@ body {
   }
 
   .text-description {
-    width: 60%;
+    width: 73%;
   }
 
   .profession {
@@ -123,7 +137,18 @@ body {
     font-size: 16px;
     line-height: 28px;
     width: 100%;
-    margin-bottom: 0;
+  }
+
+  .description-width-pilot {
+    width: 83%;
+  }
+
+  .description-width-commander {
+    width: 65%;
+  }
+
+  .description-width-engineer {
+    width: 70%;
   }
 
   .dis {
@@ -153,13 +178,14 @@ body {
 @media only screen and (min-width: 1366px) {
   body {
     background-image: url(./assets/crew/background-crew-desktop.jpg);
-    gap: 60px;
+    /* gap: 0; */
   }
 
   #main-content {
     width: auto;
-    gap: 0;
+    gap: 40px;
     grid-template-columns: 550px 39vw;
+    grid-template-rows: 185px 365px 99px;
     display: grid;
     column-gap: 82px;
     grid-template-areas:
@@ -216,8 +242,8 @@ body {
 
   .img-container {
     grid-area: img-container;
-    width: 39vw;
-    height: 81vh;
+    width: 100%;
+    height: 100%;
   }
 
   .crew-img {
