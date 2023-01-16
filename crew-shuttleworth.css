@@ -1,19 +1,15 @@
 @media only screen and (min-width: 1366px) {
-  body {
+  /* body {
     gap: 110px;
-  }
-
-  #main-content {
-    grid-template-columns: 700px 30vw;
-    column-gap: 0;
-  }
+  } */
 
   .crew-describe {
-    width: 70%;
+    /* width: 70%; */
   }
 
   .img-container {
-    width: 31vw;
-    height: 73vh;
+    width: 73%;
+    height: 90%;
+    align-self: flex-end;
   }
 }

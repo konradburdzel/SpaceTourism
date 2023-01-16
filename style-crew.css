@@ -184,10 +184,10 @@ body {
   #main-content {
     width: auto;
     gap: 40px;
-    grid-template-columns: 550px 39vw;
+    grid-template-columns: 700px 39vw;
     grid-template-rows: 185px 365px 99px;
     display: grid;
-    column-gap: 82px;
+    column-gap: 0;
     grid-template-areas:
       "title-description img-container"
       "text-description img-container"
@@ -219,7 +219,6 @@ body {
   }
 
   .crew {
-    /* width: 100%; */
     font-size: 56px;
     line-height: 64px;
   }
@@ -242,8 +241,15 @@ body {
 
   .img-container {
     grid-area: img-container;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
+    justify-self: center;
+    align-self: flex-end;
+  }
+
+  .img-container-specialist {
+    width: 73%;
+    height: 90%;
   }
 
   .crew-img {
