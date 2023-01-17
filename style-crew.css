@@ -257,3 +257,23 @@ body {
     height: 100%;
   }
 }
+
+@media only screen and (min-height: 700px) and (max-height: 800px) {
+  body {
+    padding: 40px 0 0 55px;
+    gap: 0;
+  }
+
+  .menu {
+    padding: 0;
+  }
+
+  .dots {
+    align-self: center;
+  }
+
+  #main-content {
+    gap: 0;
+    grid-template-rows: 160px 320px 99px;
+  }
+}
