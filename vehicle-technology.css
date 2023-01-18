@@ -9,12 +9,14 @@
 body {
   background-image: url(./assets/technology/background-technology-mobile.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   height: 710px;
 }
 
 #main-content {
-  justify-content: flex-start;
-  gap: 32px;
+  justify-content: space-around;
 }
 
 .title-description {
@@ -117,21 +119,16 @@ body {
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 3.375px;
-    padding: 0 0 60px 38px;
+    padding: 0 0 0 38px;
   }
 
   .img-container {
     width: 100vw;
     height: 310px;
-    padding-bottom: 56px;
   }
 
   .technology-img {
     width: 100%;
-  }
-
-  .circles {
-    padding-bottom: 44px;
   }
 
   .circle {
@@ -170,8 +167,9 @@ body {
   body {
     background-image: url(/assets/technology/background-technology-desktop.jpg);
     padding-top: 40px;
-    gap: 76px;
-    height: auto;
+    gap: 0;
+    height: 100%;
+    display: grid;
   }
 
   #main-header {
@@ -179,6 +177,7 @@ body {
   }
 
   #main-content {
+    align-self: center;
     display: grid;
     grid-template-areas:
       "title-description title-description title-description"
