@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --grey: #d0d6f9;
+  --dark: #0b0d17;
+  --border: #383b4b;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* - Fonts style - */
+/* All device */
+
+h1,
+h2,
+h3,
+.profession,
+.explore-button,
+.sub-head-number {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  /* text-align: center; */
+}
+
+h5,
+.nav-text,
+.nav-text-header,
+.sub-head-description {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* text dexoration uppercase */
+.profession,
+h5,
+.sub-head-description,
+.sub-head-number {
+  text-transform: uppercase;
+}
+
+.profession,
+.number-text-h5 {
+  mix-blend-mode: normal;
+}
+
+/* Fonts color */
+
+h1,
+h2,
+h3,
+.profession,
+h5,
+.nav-text-header,
+.explore-button,
+.sub-head-number {
+  color: var(--white);
+}
+
+.h5-grey,
+.nav-text,
+.description,
+.sub-head-description {
+  color: var(--grey);
+}
+
+/* Moble */
+/* h1 mobile - index.html */
+h1 {
+  font-size: 80px;
+  line-height: 100px;
+}
+
+/* h2 mobile destination pages */
+h2 {
+  font-size: 56px;
+  line-height: 64px;
+}
+
+/* h3 mobile name crew and technology */
+h3 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+/* h4 .profession mobile  */
+.profession {
+  font-size: 16px;
+  line-height: 18px;
+  opacity: 0.5;
+}
+
+/* h5 mobile  */
+h5 {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+}
+
+.number-text-h5 {
+  font-weight: 700;
+  opacity: 0.25;
+}
+
+/* nav text mobile */
+.nav-text {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+}
+
+.nav-text-header {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+}
+
+/* p .description mobile */
+.description {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+/* button a mobile */
+.explore-button {
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 1.25px;
+  color: var(--dark);
+}
+
+/* .sub-head-description desktop */
+/* .sub-head-description tablet */
+/* .sub-head-description mobile */
+.sub-head-description {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+}
+
+/* sub-head-number desktop */
+/* sub-head-number tablet */
+/* sub-head-number mobile */
+.sub-head-number {
+  font-size: 28px;
+  line-height: 32px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  /* h1 tablet - index.html */
+  h1 {
+    font-size: 150px;
+    line-height: 150px;
+  }
+
+  /* h2 tablet destination pages */
+  h2 {
+    font-size: 80px;
+    line-height: 92px;
+  }
+
+  /* h3 tablet name crew and technology */
+  h3 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  /* h4 .profession tablet  */
+  .profession {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  /* h5 tablet */
+  h5 {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+  }
+
+  /* nav text tablet */
+  .nav-text-header {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+  }
+  .b-display-off {
+    display: 0;
+  }
+  .nav-text {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+
+  /* p .description tablet  */
+  .description {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  /* button a desktop  */
+  /* button a tablet */
+  .explore-button {
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 2px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1366px) {
+  /* h1 desktop - index.html */
+  h1 {
+    font-size: 150px;
+    line-height: 172px;
+  }
+
+  /* h2 desktop destination pages*/
+  h2 {
+    font-size: 100px;
+    line-height: 115px;
+  }
+
+  /* h3 desktop name crew and technology */
+  h3 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  /* h4 .profession desktop  */
+  .profession {
+    font-size: 32px;
+    line-height: 37px;
+  }
+
+  /* h5 desktop */
+  h5 {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+  }
+
+  /* nav text desktop */
+  .nav-text {
+    /* nav text */
+    color: #ffffff;
+  }
+
+  .nav-text-header {
+    /* header nav */
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+
+  /* p .description desktop */
+  .description {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}

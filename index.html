@@ -10,7 +10,12 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
-    <link href="style.css" rel="stylesheet" />
+    <!-- <link href="style.css" rel="stylesheet" /> -->
+    <link href="styles/style-reset-vars.css" rel="stylesheet" />
+    <link href="styles/style-header-layout.css" rel="stylesheet" />
+    <link href="styles/style-header-comp.css" rel="stylesheet" />
+    <link href="styles/style-index-layout.css" rel="stylesheet" />
+    <link href="styles/style-index-comp.css" rel="stylesheet" />
 
     <title>Frontend Mentor | Space tourism website</title>
   </head>
@@ -21,32 +26,31 @@
       </div>
       <nav id="nav-section">
         <div class="hamburger"></div>
-        <!-- <img  src="./assets/shared/icon-hamburger.svg" /> -->
         <ul class="menu">
           <li>
-            <a href="./index.html" class="menu-link actived" data-option="0">
-              <span class="bold-nav">00</span>
+            <a href="./index.html" class="nav-text-header actived">
+              <b class="b-display-off">00</b>
               Home
               <span class="border"></span>
             </a>
           </li>
           <li>
-            <a href="destination-moon.html" class="menu-link" data-option="1">
-              <span class="bold-nav">01</span>
+            <a href="destination-moon.html" class="nav-text-header">
+              <b class="b-display-off">01</b>
               Destination
               <span class="border"></span>
             </a>
           </li>
           <li>
-            <a href="crew-commander.html" class="menu-link" data-option="2">
-              <span class="bold-nav">02</span>
+            <a href="crew-commander.html" class="nav-text-header">
+              <b class="b-display-off">02</b>
               Crew
               <span class="border"></span>
             </a>
           </li>
           <li>
-            <a href="technology-vehicle.html" class="menu-link" data-option="3">
-              <span class="bold-nav">03</span>
+            <a href="technology-vehicle.html" class="nav-text-header">
+              <b class="b-display-off">03</b>
               Technology
               <span class="border"></span>
             </a>
@@ -56,9 +60,9 @@
     </header>
     <main id="main-content">
       <section id="content-section">
-        <h2 class="subheading2">So, you want to travel to</h2>
+        <h5 class="h5-grey">So, you want to travel to</h5>
         <h1>SPACE</h1>
-        <p>
+        <p class="description">
           Let’s face it; if you want to go to space, you might as well genuinely
           go to outer space and not hover kind of on the edge of it. Well sit
           back, and relax because we’ll give you a truly out of this world
@@ -67,7 +71,7 @@
       </section>
       <section id="button-section">
         <div class="button">
-          <a href="destination-moon.html">EXPLORE</a>
+          <a class="explore-button" href="destination-moon.html">EXPLORE</a>
         </div>
       </section>
     </main>

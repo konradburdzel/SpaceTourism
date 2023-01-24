@@ -1,0 +1,34 @@
+body {
+  background-image: url(./assets/home/background-home-mobile.jpg);
+}
+
+.button {
+  border-radius: 50%;
+  background-color: var(--white);
+}
+
+.button a {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.button:hover::before {
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  mix-blend-mode: normal;
+  border-radius: 50%;
+  opacity: 0.2;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url(./assets/home/background-home-tablet.jpg);
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  body {
+    background-image: url(/assets/home/background-home-desktop.jpg);
+  }
+}
