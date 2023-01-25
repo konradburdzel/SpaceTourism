@@ -31,7 +31,7 @@ a {
 /* All device */
 
 h1,
-h2,
+.planet-destination,
 h3,
 .profession,
 .explore-button,
@@ -67,7 +67,7 @@ h5,
 /* Fonts color */
 
 h1,
-h2,
+.planet-destination,
 h3,
 .profession,
 h5,
@@ -91,8 +91,8 @@ h1 {
   line-height: 100px;
 }
 
-/* h2 mobile destination pages */
-h2 {
+/* h2 .planet-destination mobile destination pages */
+.planet-destination {
   font-size: 56px;
   line-height: 64px;
 }
@@ -142,6 +142,7 @@ h5 {
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
+  text-align: center;
 }
 
 /* button a mobile */
@@ -177,8 +178,8 @@ h5 {
     line-height: 150px;
   }
 
-  /* h2 tablet destination pages */
-  h2 {
+  /* h2 .planet-destination tablet destination pages */
+  .planet-destination {
     font-size: 80px;
     line-height: 92px;
   }
@@ -234,14 +235,17 @@ h5 {
 
 /* Desktop */
 @media only screen and (min-width: 1366px) {
+  body {
+    padding: 40px 0 40px 55px;
+  }
   /* h1 desktop - index.html */
   h1 {
     font-size: 150px;
     line-height: 172px;
   }
 
-  /* h2 desktop destination pages*/
-  h2 {
+  /* h2 .planet-destination desktop destination pages*/
+  .planet-destination {
     font-size: 100px;
     line-height: 115px;
   }

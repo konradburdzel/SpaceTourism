@@ -5,13 +5,13 @@
 
 .hamburger {
   cursor: pointer;
-  background-image: url(./assets/shared/icon-hamburger.svg);
+  background-image: url(/assets/shared/icon-hamburger.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 .hamburger.active {
-  background-image: url(./assets/shared/icon-close.svg);
+  background-image: url(/assets/shared/icon-close.svg);
 }
 
 .menu {
@@ -41,13 +41,15 @@
   .border {
     background-color: var(--white);
     transform: translateY(-50%);
+    opacity: 0;
   }
 
-  .menu li:hover .border {
+  .nav-text-header:hover .border {
     opacity: 0.5;
   }
 
-  .menu li a.actived .border {
+  .actived .border,
+  .actived:hover .border {
     opacity: 1;
   }
 }

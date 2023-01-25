@@ -1,0 +1,61 @@
+body {
+  background-image: url(/assets/destination/background-destination-mobile.jpg);
+}
+
+.nav-opacity {
+  opacity: 0.25;
+}
+
+.choice-planet,
+.choice-planet a:visited {
+  color: var(--white);
+}
+
+.nav-text {
+  list-style-type: none;
+}
+
+.nav-text a::after {
+  border-bottom: 3px solid var(--white);
+  opacity: 0;
+}
+
+.nav-text a:hover::after {
+  opacity: 0.5;
+}
+
+.nav-text a.active::after {
+  opacity: 1;
+}
+
+.description {
+  border-bottom: 1px solid var(--border);
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url(/assets/destination/background-destination-tablet.jpg);
+  }
+
+  /* .nav-choice a {
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 2.7px;
+    } */
+
+  /* h1 {
+      font-size: 80px;
+      line-height: 92px;
+    } */
+
+  /* .subheading2 {
+      font-size: 14px;
+       color: var(--grey);
+    } */
+}
+
+@media only screen and (min-width: 1366px) {
+  body {
+    background-image: url(/assets/destination/background-destination-desktop.jpg);
+  }
+}

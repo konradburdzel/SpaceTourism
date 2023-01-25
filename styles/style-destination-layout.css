@@ -1,35 +1,18 @@
-:root {
-  --white: #ffffff;
-  --grey: #d0d6f9;
-  --dark: #0b0d17;
-}
-
 body {
-  background-image: url(./assets/destination/background-destination-mobile.jpg);
-  /* background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed; */
+  display: flex;
+  flex-direction: column;
   gap: 24px;
-  height: 850px;
+  padding: 24px;
+  /* height: 850px; */
 }
 
 #main-content {
   width: 100%;
   height: 100%;
-}
-
-#content-section {
   display: flex;
-  align-content: center;
-  gap: 0;
-  width: 100%;
-  height: 100%;
-  justify-content: space-around;
-}
-
-.nav-opacity {
-  opacity: 0.25;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
 }
 
 .planet {
@@ -38,59 +21,53 @@ body {
 }
 
 .choice-planet {
-  height: 28px;
-  color: var(--white);
+  /* height: 210px; */
   display: flex;
   gap: 27px;
 }
 
-.nav-choice {
-  list-style-type: none;
+/* .nav-planets {
+  height: 100%;
 }
 
-.nav-choice a {
+.nav-text {
+  height: 100%;
+} */
+
+.nav-text a {
   display: inline-block;
   height: 100%;
   position: relative;
 }
 
-.nav-choice a::after {
+.nav-text a::after {
   content: "";
   width: 100%;
   height: 3px;
   position: absolute;
-  border-bottom: 3px solid var(--white);
-  bottom: 0;
+  bottom: -12px;
   left: 0;
-  display: none;
+  /* display: none; */
 }
 
-.nav-choice a:hover::after {
+/* .nav-text a:hover::after {
   display: block;
-  opacity: 0.2;
 }
 
-.nav-choice a.active::after {
+.nav-text a.active::after {
   display: block;
-  opacity: 1;
-}
+} */
 
-h1 {
-  font-size: 56px;
-  line-height: 64px;
-}
-
-p {
-  color: var(--grey);
+.description {
   padding-bottom: 32px;
   width: 87vw;
-  border-bottom: 1px solid #383b4b;
 }
 
 #travel-section {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  margin-bottom: 58px;
 }
 
 .avg-distance,
@@ -101,24 +78,17 @@ p {
   gap: 12px;
 }
 
-.subheading2 {
-  line-height: 17px;
-  letter-spacing: 2.36px;
-}
-
 @media only screen and (min-width: 768px) {
   body {
-    background-image: url(./assets/destination/background-destination-tablet.jpg);
     gap: 40px;
     height: auto;
   }
-  #content-section {
-    margin-bottom: 0;
-  }
+
   .nav-text {
-    width: 100%;
-    display: flex;
-    gap: 19px;
+    /* height: 100%; */
+    /* width: 100%; */
+    /* display: flex; */
+    /* gap: 19px; */
   }
 
   .nav {
@@ -135,25 +105,12 @@ p {
     margin-bottom: 53px;
   }
 
-  .nav-planets {
+  /* .nav-planets {
     margin-bottom: 32px;
-  }
+  } */
 
-  .nav-choice a {
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 2.7px;
-  }
-
-  h1 {
-    font-size: 80px;
-    line-height: 92px;
-    margin-bottom: 8px;
-  }
-
-  p {
+  .description {
     width: 74.6vw;
-    line-height: 28px;
     padding-bottom: 49px;
   }
 
@@ -163,17 +120,11 @@ p {
     align-content: space-around;
     gap: 79px;
   }
-
-  .subheading2 {
-    font-size: 14px;
-    color: var(--grey);
-  }
 }
 
 @media only screen and (min-width: 1366px) {
   body {
-    background-image: url(./assets/destination/background-destination-desktop.jpg);
-    gap: 0;
+    gap: 76px;
     width: 100%;
     height: 100%;
   }
@@ -183,18 +134,11 @@ p {
   }
 
   #main-content {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-  }
-
-  #content-section {
     width: auto;
     height: auto;
     box-sizing: content-box;
     display: grid;
-    grid-template-columns: repeat(2, 445px);
+    grid-template-columns: repeat(2, 500px);
     grid-template-rows: 98px 71px 129px 182px;
     grid-template-areas:
       "title empty"
@@ -213,6 +157,7 @@ p {
   }
 
   .planet {
+    justify-self: end;
     grid-area: pic;
     width: 445px;
     height: 445px;
@@ -221,13 +166,14 @@ p {
 
   .nav-planets {
     grid-area: destinations;
+    align-self: center;
   }
 
   .planet-destination {
     grid-area: planet;
   }
 
-  .planet-description {
+  .description {
     grid-area: description;
     width: auto;
   }

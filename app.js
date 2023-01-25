@@ -12,7 +12,7 @@ hamburgerMenu.addEventListener('click', () => {
 })
 
 //tablet
-const menuLinks = [...document.querySelectorAll('.menu-link')];
+const menuLinks = [...document.querySelectorAll('.nav-text-header')];
 const getActive = (e) => {
     const linkClasses = e.target.classList;
     menuLinks.forEach(menuLink => {
