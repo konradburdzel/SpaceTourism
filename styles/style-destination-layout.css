@@ -3,7 +3,6 @@ body {
   flex-direction: column;
   gap: 24px;
   padding: 24px;
-  /* height: 850px; */
 }
 
 #main-content {
@@ -112,7 +111,7 @@ body {
     box-sizing: content-box;
     display: grid;
     grid-template-columns: 550px 445px;
-    grid-template-rows: 50px 70px 115px 150px;
+    grid-template-rows: 100px 70px 115px 150px;
     grid-template-areas:
       "title empty"
       "pic destinations"

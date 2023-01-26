@@ -1,9 +1,9 @@
 body {
-  /* width: 100vw;
-  height: 100vh; */
+  /* width: 100vw; */
+  height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0 24px 0 24px;
+  padding: 24px 24px 0 24px;
   gap: 30px;
 }
 

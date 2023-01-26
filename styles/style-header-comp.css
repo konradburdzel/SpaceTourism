@@ -38,6 +38,10 @@
     backdrop-filter: blur(40.7742px);
   }
 
+  .b-display-off {
+    display: none;
+  }
+
   .border {
     background-color: var(--white);
     transform: translateY(-50%);
@@ -59,5 +63,9 @@
     border-bottom: 2px solid var(--white);
     mix-blend-mode: normal;
     opacity: 0.25;
+  }
+
+  .b-display-off {
+    display: block;
   }
 }
