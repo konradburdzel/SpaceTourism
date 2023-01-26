@@ -10,8 +10,11 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
-    <link href="style.css" rel="stylesheet" />
-    <link href="style-destination.css" rel="stylesheet" />
+    <link href="styles/style-reset-vars.css" rel="stylesheet" />
+    <link href="styles/style-header-layout.css" rel="stylesheet" />
+    <link href="styles/style-header-comp.css" rel="stylesheet" />
+    <link href="styles/style-destination-layout.css" rel="stylesheet" />
+    <link href="styles/style-destination-comp.css" rel="stylesheet" />
 
     <title>Frontend Mentor | Space tourism website</title>
   </head>
@@ -22,36 +25,31 @@
       </div>
       <nav id="nav-section">
         <div class="hamburger"></div>
-        <!-- <img  src="./assets/shared/icon-hamburger.svg" /> -->
         <ul class="menu">
           <li>
-            <a href="./index.html" class="menu-link" data-option="0">
-              <span class="bold-nav">00</span>
+            <a href="./index.html" class="nav-text-header">
+              <b class="b-display-off">00</b>
               Home
               <span class="border"></span>
             </a>
           </li>
           <li>
-            <a
-              href="destination-moon.html"
-              class="menu-link actived"
-              data-option="1"
-            >
-              <span class="bold-nav">01</span>
+            <a href="destination-moon.html" class="nav-text-header actived">
+              <b class="b-display-off">01</b>
               Destination
               <span class="border"></span>
             </a>
           </li>
           <li>
-            <a href="crew-commander.html" class="menu-link" data-option="2">
-              <span class="bold-nav">02</span>
+            <a href="crew-commander.html" class="nav-text-header">
+              <b class="b-display-off">02</b>
               Crew
               <span class="border"></span>
             </a>
           </li>
           <li>
-            <a href="technology-vehicle.html" class="menu-link" data-option="3">
-              <span class="bold-nav">03</span>
+            <a href="technology-vehicle.html" class="nav-text-header">
+              <b class="b-display-off">03</b>
               Technology
               <span class="border"></span>
             </a>
@@ -60,51 +58,49 @@
       </nav>
     </header>
     <main id="main-content">
-      <section id="content-section">
-        <h2 class="nav nav-text title-description">
-          <span class="bold-nav nav-opacity">01</span> Pick your destination
-        </h2>
-        <img
-          class="planet"
-          src="./assets/destination/image-titan.webp"
-          alt="Image of Titan"
-        />
+      <h5>
+        <span class="number-text-h5 nav-opacity">01</span> Pick your destination
+      </h5>
+      <img
+        class="planet"
+        src="./assets/destination/image-titan.webp"
+        alt="Image of Titan"
+      />
 
-        <nav class="nav-planets">
-          <ul class="choice-planet">
-            <li class="nav-choice">
-              <a href="destination-moon.html">MOON</a>
-            </li>
-            <li class="nav-choice">
-              <a href="destination-mars.html">MARS</a>
-            </li>
-            <li class="nav-choice">
-              <a href="destination-europa.html">EUROPA</a>
-            </li>
-            <li class="nav-choice">
-              <a class="active" href="destination-titan.html">TITAN</a>
-            </li>
-          </ul>
-        </nav>
+      <nav class="nav-planets">
+        <ul class="choice-planet">
+          <li class="nav-text">
+            <a href="destination-moon.html">MOON</a>
+          </li>
+          <li class="nav-text">
+            <a href="destination-mars.html">MARS</a>
+          </li>
+          <li class="nav-text">
+            <a href="destination-europa.html">EUROPA</a>
+          </li>
+          <li class="nav-text">
+            <a class="active" href="destination-titan.html">TITAN</a>
+          </li>
+        </ul>
+      </nav>
 
-        <h1 class="planet-destination">TITAN</h1>
-        <p class="planet-description">
-          The only moon known to have a dense atmosphere other than Earth, Titan
-          is a home away from home (just a few hundred degrees colder!). As a
-          bonus, you get striking views of the Rings of Saturn.
-        </p>
+      <h1 class="planet-destination">TITAN</h1>
+      <p class="description">
+        The only moon known to have a dense atmosphere other than Earth, Titan
+        is a home away from home (just a few hundred degrees colder!). As a
+        bonus, you get striking views of the Rings of Saturn.
+      </p>
 
-        <div id="travel-section">
-          <div class="avg-distance">
-            <span class="sub-head-description">Avg. distance</span>
-            <span class="sub-head-number">1.6 bil. km</span>
-          </div>
-          <div class="travel-time">
-            <span class="sub-head-description">Est. travel time</span>
-            <span class="sub-head-number">7 years</span>
-          </div>
+      <div id="travel-section">
+        <div class="avg-distance">
+          <span class="sub-head-description">Avg. distance</span>
+          <span class="sub-head-number">1.6 bil. km</span>
         </div>
-      </section>
+        <div class="travel-time">
+          <span class="sub-head-description">Est. travel time</span>
+          <span class="sub-head-number">7 years</span>
+        </div>
+      </div>
     </main>
     <script src="app.js"></script>
   </body>
