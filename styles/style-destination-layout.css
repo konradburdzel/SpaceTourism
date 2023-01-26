@@ -21,18 +21,9 @@ body {
 }
 
 .choice-planet {
-  /* height: 210px; */
   display: flex;
   gap: 27px;
 }
-
-/* .nav-planets {
-  height: 100%;
-}
-
-.nav-text {
-  height: 100%;
-} */
 
 .nav-text a {
   display: inline-block;
@@ -47,16 +38,11 @@ body {
   position: absolute;
   bottom: -12px;
   left: 0;
-  /* display: none; */
-}
-
-/* .nav-text a:hover::after {
-  display: block;
 }
 
 .nav-text a.active::after {
   display: block;
-} */
+}
 
 .description {
   padding-bottom: 32px;
@@ -81,14 +67,8 @@ body {
 @media only screen and (min-width: 768px) {
   body {
     gap: 40px;
-    height: auto;
-  }
-
-  .nav-text {
-    /* height: 100%; */
-    /* width: 100%; */
-    /* display: flex; */
-    /* gap: 19px; */
+    padding: 0 0 0 24px;
+    /* height: auto; */
   }
 
   .nav {
@@ -105,10 +85,6 @@ body {
     margin-bottom: 53px;
   }
 
-  /* .nav-planets {
-    margin-bottom: 32px;
-  } */
-
   .description {
     width: 74.6vw;
     padding-bottom: 49px;
@@ -124,22 +100,19 @@ body {
 
 @media only screen and (min-width: 1366px) {
   body {
-    gap: 76px;
-    width: 100%;
+    padding: 40px 0 0 55px;
     height: 100%;
-  }
-
-  #main-header {
-    width: 100%;
+    display: grid;
   }
 
   #main-content {
+    margin-bottom: auto;
     width: auto;
     height: auto;
     box-sizing: content-box;
     display: grid;
-    grid-template-columns: repeat(2, 500px);
-    grid-template-rows: 98px 71px 129px 182px;
+    grid-template-columns: 550px 445px;
+    grid-template-rows: 50px 70px 115px 150px;
     grid-template-areas:
       "title empty"
       "pic destinations"
@@ -147,7 +120,9 @@ body {
       "pic description"
       "pic travel";
     column-gap: 100px;
+    row-gap: 0;
     align-items: flex-start;
+    justify-content: center;
   }
 
   .title-description {
@@ -158,6 +133,7 @@ body {
 
   .planet {
     justify-self: end;
+    align-self: center;
     grid-area: pic;
     width: 445px;
     height: 445px;

@@ -222,6 +222,7 @@ h5 {
   .description {
     font-size: 16px;
     line-height: 28px;
+    text-align: left;
   }
 
   /* button a desktop  */
