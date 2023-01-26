@@ -32,7 +32,7 @@ a {
 
 h1,
 .planet-destination,
-h3,
+.crew-name,
 .profession,
 .explore-button,
 .sub-head-number {
@@ -68,7 +68,7 @@ h5,
 
 h1,
 .planet-destination,
-h3,
+.crew-name,
 .profession,
 h5,
 .nav-text-header,
@@ -97,13 +97,13 @@ h1 {
   line-height: 64px;
 }
 
-/* h3 mobile name crew and technology */
-h3 {
+/* h3 .crew mobile name crew and technology */
+.crew-name {
   font-size: 24px;
   line-height: 28px;
 }
 
-/* h4 .profession mobile  */
+/* h4 crew .profession mobile  */
 .profession {
   font-size: 16px;
   line-height: 18px;
@@ -115,6 +115,10 @@ h5 {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 2.7px;
+}
+
+.h5-opacity {
+  opacity: 0.25;
 }
 
 .number-text-h5 {
@@ -184,13 +188,13 @@ h5 {
     line-height: 92px;
   }
 
-  /* h3 tablet name crew and technology */
-  h3 {
+  /* h3 .crew-name tablet name crew and technology */
+  .crew-name {
     font-size: 40px;
     line-height: 46px;
   }
 
-  /* h4 .profession tablet  */
+  /* h4 crew .profession tablet  */
   .profession {
     font-size: 24px;
     line-height: 28px;
@@ -222,7 +226,7 @@ h5 {
   .description {
     font-size: 16px;
     line-height: 28px;
-    text-align: left;
+    text-align: center;
   }
 
   /* button a desktop  */
@@ -251,13 +255,13 @@ h5 {
     line-height: 115px;
   }
 
-  /* h3 desktop name crew and technology */
-  h3 {
+  /* h3 .crew-name desktop name crew and technology */
+  .crew-name {
     font-size: 56px;
     line-height: 64px;
   }
 
-  /* h4 .profession desktop  */
+  /* h4 crew .profession desktop  */
   .profession {
     font-size: 32px;
     line-height: 37px;
@@ -287,5 +291,6 @@ h5 {
   .description {
     font-size: 18px;
     line-height: 32px;
+    text-align: left;
   }
 }

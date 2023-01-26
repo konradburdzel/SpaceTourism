@@ -227,7 +227,7 @@ p {
     grid-area: planet;
   }
 
-  .planet-description {
+  .description {
     grid-area: description;
     width: auto;
   }

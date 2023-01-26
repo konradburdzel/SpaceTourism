@@ -1,0 +1,41 @@
+body {
+  background-image: url(/assets/crew/background-crew-mobile.jpg);
+}
+
+.nav-opacity {
+  opacity: 0.25;
+}
+
+.border-img {
+  border-bottom: 1px solid var(--border);
+}
+
+.dot {
+  border-radius: 50%;
+  background-color: var(--white);
+  opacity: 0.17;
+}
+
+.dot:hover {
+  opacity: 0.5;
+}
+
+.dot.active {
+  opacity: 1;
+}
+
+.profession {
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url(/assets/crew/background-crew-tablet.jpg);
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  body {
+    background-image: url(/assets/crew/background-crew-desktop.jpg);
+  }
+}

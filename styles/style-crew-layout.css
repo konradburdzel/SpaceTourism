@@ -1,0 +1,170 @@
+body {
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#main-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.img-container {
+  width: 327px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.crew-img {
+  width: 177px;
+  height: 220px;
+}
+
+.border-img {
+  width: 100%;
+}
+
+.dots {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+}
+
+.text-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 24vh;
+}
+
+.description-width-commander {
+  width: 90%;
+}
+.description-width-specialist {
+  width: 95%;
+}
+.description-width-pilot {
+  width: 94%;
+}
+.description-width-engineer {
+  width: 96%;
+  margin-right: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    gap: 40px;
+    padding: 0 0 0 24px;
+  }
+
+  #main-content {
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  h5 {
+    align-self: flex-start;
+  }
+
+  .text-description {
+    width: 73%;
+  }
+
+  .description-width-pilot {
+    width: 83%;
+  }
+
+  .description-width-commander {
+    width: 65%;
+  }
+
+  .description-width-engineer {
+    width: 95%;
+  }
+
+  .text-description {
+    order: 1;
+    height: 18vh;
+  }
+
+  .dots {
+    order: 2;
+  }
+
+  .img-container {
+    order: 3;
+    width: 60vw;
+    height: 56vh;
+  }
+
+  .crew-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  body {
+    padding: 40px 0 0 55px;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  #main-content {
+    padding-left: 8vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 550px 39vw;
+    grid-template-rows: 150px 350px 99px;
+    grid-template-areas:
+      "title-description img-container"
+      "text-description img-container"
+      "dots img-container";
+  }
+
+  .text-description {
+    width: auto;
+  }
+
+  .text-description {
+    grid-area: text-description;
+    align-items: flex-start;
+    height: 30vh;
+  }
+
+  .dots {
+    grid-area: dots;
+    align-self: flex-start;
+  }
+
+  .img-container {
+    grid-area: img-container;
+    width: 90%;
+    height: 100%;
+    justify-self: center;
+    align-self: flex-end;
+  }
+
+  .img-container-specialist {
+    width: 73%;
+    height: 90%;
+  }
+
+  .crew-img {
+    width: 100%;
+    height: 100%;
+  }
+}

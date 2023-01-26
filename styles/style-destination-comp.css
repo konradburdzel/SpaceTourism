@@ -2,10 +2,6 @@ body {
   background-image: url(/assets/destination/background-destination-mobile.jpg);
 }
 
-.nav-opacity {
-  opacity: 0.25;
-}
-
 .choice-planet,
 .choice-planet a:visited {
   color: var(--white);
