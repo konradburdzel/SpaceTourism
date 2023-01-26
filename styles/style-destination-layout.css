@@ -86,7 +86,7 @@ body {
 
   .description {
     width: 74.6vw;
-    padding-bottom: 49px;
+    padding-bottom: auto;
   }
 
   #travel-section {
