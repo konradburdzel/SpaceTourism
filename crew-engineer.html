@@ -10,8 +10,11 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
-    <link href="style.css" rel="stylesheet" />
-    <link href="style-crew.css" rel="stylesheet" />
+    <link href="styles/style-reset-vars.css" rel="stylesheet" />
+    <link href="styles/style-header-layout.css" rel="stylesheet" />
+    <link href="styles/style-header-comp.css" rel="stylesheet" />
+    <link href="styles/style-crew-layout.css" rel="stylesheet" />
+    <link href="styles/style-crew-comp.css" rel="stylesheet" />
 
     <title>Frontend Mentor | Space tourism website</title>
   </head>
@@ -22,32 +25,31 @@
       </div>
       <nav id="nav-section">
         <div class="hamburger"></div>
-        <!-- <img  src="./assets/shared/icon-hamburger.svg" /> -->
         <ul class="menu">
           <li>
-            <a href="./index.html" class="menu-link">
-              <span class="bold-nav">00</span>
+            <a href="./index.html" class="nav-text-header">
+              <b class="b-display-off">00</b>
               Home
               <span class="border"></span>
             </a>
           </li>
           <li>
-            <a href="destination-moon.html" class="menu-link">
-              <span class="bold-nav">01</span>
+            <a href="destination-moon.html" class="nav-text-header">
+              <b class="b-display-off">01</b>
               Destination
               <span class="border"></span>
             </a>
           </li>
           <li>
-            <a href="crew-commander.html" class="menu-link actived">
-              <span class="bold-nav">02</span>
+            <a href="crew-commander.html" class="nav-text-header actived">
+              <b class="b-display-off">02</b>
               Crew
               <span class="border"></span>
             </a>
           </li>
           <li>
-            <a href="technology-vehicle.html" class="menu-link">
-              <span class="bold-nav">03</span>
+            <a href="technology-vehicle.html" class="nav-text-header">
+              <b class="b-display-off">03</b>
               Technology
               <span class="border"></span>
             </a>
@@ -56,9 +58,7 @@
       </nav>
     </header>
     <main id="main-content">
-      <h2 class="nav nav-text title-description">
-        <span class="bold-nav nav-opacity dis">02</span> Meet your crew
-      </h2>
+      <h5><span class="number-text-h5 h5-opacity">02</span> Meet your crew</h5>
       <div class="img-container">
         <img
           class="crew-img"
@@ -73,10 +73,10 @@
         <a class="dot" href="crew-pilot.html"></a>
         <a class="dot active" href="crew-engineer.html"></a>
       </div>
-      <div class="text-description">
-        <h3 class="profession">Flight Engineer</h3>
-        <h1 class="crew">Anousheh Ansari</h1>
-        <p class="crew-describe description-width-engineer">
+      <div class="text-description description-width-commander">
+        <h4 class="profession">Flight Engineer</h4>
+        <h3 class="crew-name">Anousheh Ansari</h3>
+        <p class="description">
           Anousheh Ansari is an Iranian American engineer and co-founder of
           Prodea Systems. Ansari was the fourth self-funded space tourist, the
           first self-funded woman to fly to the ISS, and the first Iranian in

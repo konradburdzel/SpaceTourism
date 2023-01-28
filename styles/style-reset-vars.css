@@ -101,6 +101,7 @@ h1 {
 .crew-name {
   font-size: 24px;
   line-height: 28px;
+  text-transform: uppercase;
 }
 
 /* h4 crew .profession mobile  */
