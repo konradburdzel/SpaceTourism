@@ -9,6 +9,7 @@
   --grey: #d0d6f9;
   --dark: #0b0d17;
   --border: #383b4b;
+  --white-opacity-quarter: #ffffff40;
 }
 
 html {
@@ -22,9 +23,11 @@ body {
   background-attachment: fixed;
 }
 
-a {
+a,
+a:visited {
   text-decoration: none;
   list-style-type: none;
+  color: var(--white);
 }
 
 /* - Fonts style - */
@@ -33,6 +36,7 @@ a {
 h1,
 .planet-destination,
 .crew-name,
+.technology-name,
 .profession,
 .explore-button,
 .sub-head-number {
@@ -69,6 +73,7 @@ h5,
 h1,
 .planet-destination,
 .crew-name,
+.technology-name,
 .profession,
 h5,
 .nav-text-header,
@@ -98,7 +103,8 @@ h1 {
 }
 
 /* h3 .crew mobile name crew and technology */
-.crew-name {
+.crew-name,
+.technology-name {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
@@ -191,7 +197,8 @@ h5 {
   }
 
   /* h3 .crew-name tablet name crew and technology */
-  .crew-name {
+  .crew-name,
+  .technology-name {
     font-size: 40px;
     line-height: 46px;
   }
@@ -258,7 +265,8 @@ h5 {
   }
 
   /* h3 .crew-name desktop name crew and technology */
-  .crew-name {
+  .crew-name,
+  .technology-name {
     font-size: 56px;
     line-height: 64px;
   }

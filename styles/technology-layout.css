@@ -1,0 +1,183 @@
+body {
+  /* height: 710px; */
+  padding: 24px;
+  height: 100%;
+}
+
+#main-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h5 {
+  display: flex;
+  gap: 16px;
+}
+
+.img-container {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.technology-img {
+  width: 100vw;
+  height: 100%;
+}
+
+.circles {
+  display: flex;
+  gap: 16px;
+}
+
+.circle {
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-description {
+  height: 31vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    padding: 0;
+    gap: 40px;
+  }
+
+  #main-header {
+    padding-left: 39px;
+  }
+
+  #main-content {
+    width: 100%;
+    gap: 0;
+  }
+
+  .dis {
+    display: block;
+  }
+
+  .title-description {
+    box-sizing: border-box;
+    width: 100%;
+    align-items: flex-start;
+    padding: 0 0 0 38px;
+  }
+
+  .img-container {
+    width: 100vw;
+    height: 310px;
+  }
+
+  .technology-img {
+    width: 100%;
+  }
+
+  .circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .text-description {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .terminology {
+    margin-bottom: 16px;
+  }
+
+  .description {
+    width: 52%;
+    height: 23vh;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  body {
+    padding-top: 40px;
+    gap: 0;
+    height: 100%;
+    display: grid;
+  }
+
+  #main-header {
+    padding-left: 55px;
+  }
+
+  #main-content {
+    align-self: center;
+    display: grid;
+    grid-template-areas:
+      "title-description title-description title-description"
+      "circles text-description img-container";
+    justify-content: space-between;
+  }
+
+  .dis {
+    display: block;
+  }
+
+  .title-description {
+    grid-area: title-description;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: flex-start;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    padding: 0 0 60px 165px;
+  }
+
+  .img-container {
+    grid-area: img-container;
+    width: 36vw;
+    height: 59vh;
+  }
+
+  .technology-img {
+    width: 100%;
+  }
+
+  .circles {
+    grid-area: circles;
+    display: flex;
+    flex-direction: column;
+    padding-left: 165px;
+  }
+
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .text-description {
+    grid-area: text-description;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 33vw;
+    padding-left: 6vw;
+  }
+
+  .description {
+    width: 86%;
+    height: 31vh;
+  }
+}
+/* 264   */

@@ -3,7 +3,7 @@
   --grey: #d0d6f9;
   --dark: #0b0d17;
   --border: #383b4b;
-  --white-opacity-quarter: rgba(255, 255, 255, 0.25);
+  --white-opacity-quarter: #ffffff40;
 }
 
 body {

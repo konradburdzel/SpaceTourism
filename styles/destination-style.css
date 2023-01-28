@@ -2,8 +2,7 @@ body {
   background-image: url(/assets/destination/background-destination-mobile.jpg);
 }
 
-.choice-planet,
-.choice-planet a:visited {
+.choice-planet {
   color: var(--white);
 }
 
