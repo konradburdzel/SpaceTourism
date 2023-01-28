@@ -34,7 +34,7 @@ body {
 .dots {
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: 3vw;
 }
 
 .dot {
@@ -104,6 +104,11 @@ body {
     order: 2;
   }
 
+  .dot {
+    width: 15px;
+    height: 15px;
+  }
+
   .img-container {
     order: 3;
     width: 60vw;
@@ -150,6 +155,11 @@ body {
     align-self: flex-start;
   }
 
+  .dot {
+    width: 20px;
+    height: 20px;
+  }
+
   .img-container {
     grid-area: img-container;
     width: 90%;
@@ -166,5 +176,10 @@ body {
   .crew-img {
     width: 100%;
     height: 100%;
+  }
+}
+@media only screen and (min-width: 1601px) {
+  #main-content {
+    grid-template-rows: 200px 450px 199px;
   }
 }
