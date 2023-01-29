@@ -1,6 +1,13 @@
-body {
+body,
+#main-content,
+#travel-section,
+.avg-distance,
+.travel-time {
   display: flex;
   flex-direction: column;
+}
+
+body {
   gap: 24px;
   padding: 24px;
 }
@@ -8,8 +15,6 @@ body {
 #main-content {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 32px;
 }
@@ -49,16 +54,12 @@ body {
 }
 
 #travel-section {
-  display: flex;
-  flex-direction: column;
   gap: 32px;
   margin-bottom: 58px;
 }
 
 .avg-distance,
 .travel-time {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 12px;
 }
@@ -67,7 +68,6 @@ body {
   body {
     gap: 40px;
     padding: 0 0 0 24px;
-    /* height: auto; */
   }
 
   .nav {
