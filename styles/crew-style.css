@@ -16,16 +16,13 @@ body {
   opacity: 0.17;
 }
 
-.dot:hover {
+.dot:hover,
+.profession {
   opacity: 0.5;
 }
 
 .dot.active {
   opacity: 1;
-}
-
-.profession {
-  opacity: 0.5;
 }
 
 @media only screen and (min-width: 768px) {
