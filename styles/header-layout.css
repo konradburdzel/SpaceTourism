@@ -1,0 +1,164 @@
+#nav-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+}
+
+#main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo,
+#logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.hamburger {
+  z-index: 2;
+  width: 24px;
+  height: 21px;
+}
+
+.hamburger.active {
+  position: fixed;
+  top: 35px;
+  right: 25px;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  width: clamp(50%, 60%, 70%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 118px 0 0 32px;
+  gap: 32px;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.menu a::after.actived {
+  content: "";
+  position: absolute;
+  bottom: -35px;
+  right: 0;
+  width: 100%;
+  height: 3px;
+}
+
+.hamburger.active + ul.menu {
+  position: fixed;
+}
+
+.explore-button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  #main-header {
+    margin-top: 0;
+    align-items: center;
+  }
+
+  #logo,
+  #logo img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .menu {
+    position: static;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    height: 96px;
+    width: auto;
+    padding: 0 29px;
+    gap: 0;
+  }
+
+  .border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    /* background-color: var(--white);
+    transform: translateY(-50%); */
+    /* display: none; */
+    /* z-index: 2; */
+  }
+
+  .actived .border {
+    z-index: 2;
+  }
+
+  /* .nav-text {
+    padding: 40px 0;
+  } */
+
+  .menu li {
+    padding: 0 19px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  #main-header {
+    margin: 0;
+    height: 96px;
+    align-items: center;
+    position: relative;
+  }
+
+  .menu {
+    width: 60%;
+    padding: 0 0 0 6%;
+  }
+
+  .menu::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -53%;
+    width: 57%;
+  }
+
+  /* .bold-nav {
+    display: block;
+  } */
+
+  .nav-text {
+    font-size: 19px;
+  }
+}
