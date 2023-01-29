@@ -10,8 +10,11 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
-    <link href="style.css" rel="stylesheet" />
-    <link href="vehicle-technology.css" rel="stylesheet" />
+    <link href="styles/style-reset-vars.css" rel="stylesheet" />
+    <link href="styles/header-layout.css" rel="stylesheet" />
+    <link href="styles/header-style.css" rel="stylesheet" />
+    <link href="styles/technology-layout.css" rel="stylesheet" />
+    <link href="styles/technology-style.css" rel="stylesheet" />
 
     <title>Frontend Mentor | Space tourism website</title>
   </head>
@@ -22,32 +25,31 @@
       </div>
       <nav id="nav-section">
         <div class="hamburger"></div>
-        <!-- <img  src="./assets/shared/icon-hamburger.svg" /> -->
         <ul class="menu">
           <li>
-            <a href="./index.html" class="menu-link">
-              <span class="bold-nav">00</span>
+            <a href="./index.html" class="nav-text-header">
+              <b class="b-display-off">00</b>
               Home
               <span class="border"></span>
             </a>
           </li>
           <li>
-            <a href="destination-moon.html" class="menu-link">
-              <span class="bold-nav">01</span>
+            <a href="destination-moon.html" class="nav-text-header">
+              <b class="b-display-off">01</b>
               Destination
               <span class="border"></span>
             </a>
           </li>
           <li>
-            <a href="crew-commander.html" class="menu-link">
-              <span class="bold-nav">02</span>
+            <a href="crew-commander.html" class="nav-text-header">
+              <b class="b-display-off">02</b>
               Crew
               <span class="border"></span>
             </a>
           </li>
           <li>
-            <a href="technology-vehicle.html" class="menu-link actived">
-              <span class="bold-nav">03</span>
+            <a href="technology-vehicle.html" class="nav-text-header actived">
+              <b class="b-display-off">03</b>
               Technology
               <span class="border"></span>
             </a>
@@ -56,9 +58,7 @@
       </nav>
     </header>
     <main id="main-content">
-      <h2 class="nav nav-text title-description">
-        <span class="bold-nav nav-opacity dis">03</span>Space launch 101
-      </h2>
+      <h5><span class="number-text-h5 h5-opacity">03</span>Space launch 101</h5>
       <div class="img-container">
         <img
           class="technology-img"
@@ -73,9 +73,9 @@
         <a class="circle" href="technology-capsule.html">3</a>
       </div>
       <div class="text-description">
-        <h3 class="nav-text">The terminology...</h3>
-        <h1 class="vehicle">Spaceport</h1>
-        <p class="vehicle-describe">
+        <h4 class="nav-text">The terminology...</h4>
+        <h3 class="technology-name">Spaceport</h3>
+        <p class="description">
           A spaceport or cosmodrome is a site for launching (or receiving)
           spacecraft, by analogy to the seaport for ships or airport for
           aircraft. Based in the famous Cape Canaveral, our spaceport is ideally

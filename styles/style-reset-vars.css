@@ -43,7 +43,6 @@ h1,
   font-family: "Bellefair";
   font-style: normal;
   font-weight: 400;
-  /* text-align: center; */
 }
 
 h5,
@@ -55,7 +54,16 @@ h5,
   font-weight: 400;
 }
 
-/* text dexoration uppercase */
+.nav-text,
+.crew-name,
+.technology-name,
+.profession {
+  text-align: center;
+}
+
+.nav-text-header,
+.crew-name,
+.technology-name,
 .profession,
 h5,
 .sub-head-description,
@@ -107,7 +115,6 @@ h1 {
 .technology-name {
   font-size: 24px;
   line-height: 28px;
-  text-transform: uppercase;
 }
 
 /* h4 crew .profession mobile  */
@@ -144,7 +151,6 @@ h5 {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 2.7px;
-  text-transform: uppercase;
 }
 
 /* p .description mobile */
