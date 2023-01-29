@@ -111,7 +111,7 @@ body {
     box-sizing: content-box;
     display: grid;
     grid-template-columns: 550px 445px;
-    grid-template-rows: 100px 70px 115px 150px;
+    grid-template-rows: 100px 70px 115px 160px;
     grid-template-areas:
       "title empty"
       "pic destinations"
@@ -131,9 +131,9 @@ body {
   }
 
   .planet {
+    grid-area: pic;
     justify-self: end;
     align-self: center;
-    grid-area: pic;
     width: 445px;
     height: 445px;
     margin: 0;
@@ -151,6 +151,8 @@ body {
   .description {
     grid-area: description;
     width: auto;
+    height: 100%;
+    margin: 0;
   }
 
   #travel-section {
