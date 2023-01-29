@@ -1,3 +1,24 @@
+#main-content,
+.img-container,
+.text-description,
+h5,
+.circles,
+.circle {
+  display: flex;
+}
+
+#main-content,
+.img-container,
+.text-description {
+  flex-direction: column;
+}
+
+#main-content,
+.img-container,
+.circle {
+  align-items: center;
+}
+
 body {
   height: 100%;
   padding: 24px;
@@ -5,23 +26,16 @@ body {
 
 #main-content {
   height: calc(100% - 40px - 24px);
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  align-items: center;
 }
 
 h5 {
-  display: flex;
   gap: 16px;
 }
 
 .img-container {
   width: 100%;
   height: 170px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .technology-img {
@@ -30,24 +44,18 @@ h5 {
 }
 
 .circles {
-  display: flex;
   gap: 16px;
 }
 
 .circle {
-  box-sizing: border-box;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 
 .text-description {
   height: 31vh;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -79,9 +87,7 @@ h5 {
 
   .text-description {
     height: 25vh;
-    display: flex;
     align-items: center;
-    flex-direction: column;
   }
 
   .description {
@@ -90,6 +96,12 @@ h5 {
 }
 
 @media only screen and (min-width: 1366px) {
+  .circles,
+  .text-description {
+    display: flex;
+    flex-direction: column;
+  }
+
   body {
     padding: 40px 0 0 55px;
   }
@@ -120,8 +132,6 @@ h5 {
 
   .circles {
     grid-area: circles;
-    display: flex;
-    flex-direction: column;
     gap: 32px;
   }
 
@@ -132,9 +142,7 @@ h5 {
 
   .text-description {
     grid-area: text-description;
-    display: flex;
     align-items: flex-start;
-    flex-direction: column;
     height: 33vh;
   }
 
@@ -142,4 +150,3 @@ h5 {
     width: 86%;
   }
 }
-/* 264   */
