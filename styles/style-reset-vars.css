@@ -59,7 +59,8 @@ h5,
 .crew-name,
 .technology-name,
 .profession,
-.nav-technology {
+.nav-technology,
+.description {
   text-align: center;
 }
 
@@ -170,7 +171,6 @@ h5 {
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
-  text-align: center;
 }
 
 /* button a mobile */
@@ -252,7 +252,6 @@ h5 {
   .description {
     font-size: 16px;
     line-height: 28px;
-    text-align: center;
   }
 
   /* button a desktop  */
@@ -305,7 +304,7 @@ h5 {
   /* nav text desktop */
   .nav-text {
     /* nav text */
-    color: #ffffff;
+    color: var(--white);
   }
 
   .nav-text-header {
