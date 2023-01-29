@@ -9,13 +9,12 @@ body {
 
 .button a {
   color: var(--dark);
-  text-decoration: none;
 }
 
 .button:hover::before {
   cursor: pointer;
   transform: translate(-50%, -50%);
-  background: #ffffff;
+  background: var(--white);
   mix-blend-mode: normal;
   border-radius: 50%;
   opacity: 0.2;
