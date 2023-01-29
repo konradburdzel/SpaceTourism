@@ -132,7 +132,7 @@ body {
     padding-left: 8vw;
     height: auto;
     display: grid;
-    grid-template-columns: 550px 39vw;
+    grid-template-columns: 650px 39vw;
     grid-template-rows: 150px 350px 99px;
     grid-template-areas:
       "title-description img-container"
@@ -140,14 +140,22 @@ body {
       "dots img-container";
   }
 
-  .text-description {
-    width: auto;
+  h5 {
+    grid-area: title-description;
+    align-self: center;
   }
 
   .text-description {
     grid-area: text-description;
+    /* justify-self: center; */
     align-items: flex-start;
-    height: 30vh;
+    justify-content: space-around;
+    height: 80%;
+    width: auto;
+  }
+
+  .description {
+    width: 70%;
   }
 
   .dots {
@@ -162,15 +170,16 @@ body {
 
   .img-container {
     grid-area: img-container;
-    width: 90%;
-    height: 100%;
+    width: 80%;
+    height: 90%;
     justify-self: center;
     align-self: flex-end;
   }
 
   .img-container-specialist {
-    width: 73%;
+    width: 55%;
     height: 90%;
+    justify-self: flex-start;
   }
 
   .crew-img {
