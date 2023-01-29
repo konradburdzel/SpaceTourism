@@ -38,6 +38,7 @@ h1,
 .crew-name,
 .technology-name,
 .profession,
+.nav-technology,
 .explore-button,
 .sub-head-number {
   font-family: "Bellefair";
@@ -57,14 +58,17 @@ h5,
 .nav-text,
 .crew-name,
 .technology-name,
-.profession {
+.profession,
+.nav-technology {
   text-align: center;
 }
 
+.nav-text,
 .nav-text-header,
 .crew-name,
 .technology-name,
 .profession,
+.nav-technology,
 h5,
 .sub-head-description,
 .sub-head-number {
@@ -72,6 +76,7 @@ h5,
 }
 
 .profession,
+.nav-technology,
 .number-text-h5 {
   mix-blend-mode: normal;
 }
@@ -83,6 +88,7 @@ h1,
 .crew-name,
 .technology-name,
 .profession,
+.nav-technology,
 h5,
 .nav-text-header,
 .explore-button,
@@ -117,10 +123,14 @@ h1 {
   line-height: 28px;
 }
 
-/* h4 crew .profession mobile  */
-.profession {
+/* h4 crew .profession and technology change page .nav-technology mobile  */
+.profession,
+.nav-technology {
   font-size: 16px;
   line-height: 18px;
+}
+
+.profession {
   opacity: 0.5;
 }
 
@@ -210,7 +220,8 @@ h5 {
   }
 
   /* h4 crew .profession tablet  */
-  .profession {
+  .profession,
+  .nav-technology {
     font-size: 24px;
     line-height: 28px;
   }
@@ -278,7 +289,8 @@ h5 {
   }
 
   /* h4 crew .profession desktop  */
-  .profession {
+  .profession,
+  .nav-technology {
     font-size: 32px;
     line-height: 37px;
   }

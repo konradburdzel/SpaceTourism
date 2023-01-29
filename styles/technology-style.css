@@ -1,11 +1,6 @@
 body {
   background-image: url(/assets/technology/background-technology-mobile.jpg);
-  /* height: 710px; */
 }
-
-/* .nav-opacity {
-    opacity: 0.25;
-  } */
 
 .circle {
   border: 1px solid var(--white-opacity-quarter);
@@ -15,54 +10,15 @@ body {
   border: 1px solid var(--white);
 }
 
-.circle.active {
-  /* opacity: 1; */
+.circle.active,
+.circle.active .nav-technology {
   background-color: var(--white);
   color: var(--dark);
-}
-
-.terminology {
-  /* font-size: 14px;
-    line-height: 17px; */
-  /* text-align: center; */
-  /* letter-spacing: 2.36px;
-    text-transform: uppercase; */
-  /* color: var(--grey); */
-}
-
-.vehicle {
-  /* font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    text-transform: uppercase; */
-}
-
-.vehicle-describe {
-  /* font-size: 15px;
-    line-height: 25px;
-    color: var(--grey); */
-  /* text-align: center; */
 }
 
 @media only screen and (min-width: 768px) {
   body {
     background-image: url(/assets/technology/background-technology-tablet.jpg);
-  }
-
-  .terminology {
-    /* font-size: 16px;
-      line-height: 19px;
-      letter-spacing: 2.7px; */
-  }
-
-  /* .vehicle {
-      font-size: 40px;
-      line-height: 46px;
-    } */
-
-  .vehicle-describe {
-    /* font-size: 16px;
-      line-height: 28px; */
   }
 }
 
@@ -81,21 +37,6 @@ body {
 
   img[src="/assets/technology/image-space-capsule-landscape.jpg"] {
     content: url("/assets/technology/image-space-capsule-portrait.jpg");
-  }
-
-  .circle:hover {
-    opacity: 1;
-  }
-
-  /* .vehicle {
-      font-size: 56px;
-      line-height: 64px;
-    } */
-
-  .vehicle-describe {
-    /* font-size: 18px;
-      line-height: 32px; */
-    /* text-align: left; */
   }
 }
 /* 264   */
