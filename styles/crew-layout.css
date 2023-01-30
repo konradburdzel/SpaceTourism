@@ -7,7 +7,8 @@ body,
   flex-direction: column;
 }
 
-#main-content .img-container,
+#main-content,
+.img-container,
 .text-description {
   align-items: center;
 }
