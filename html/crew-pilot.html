@@ -5,33 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Specialist, a trained expert in a specific field relevant to space tourism, such as medicine, science, or communications, responsible for enhancing the tourists' experience and ensuring their safety."
+      content="Pilot, a trained astronaut who operates the spacecraft for space tourism missions, responsible for the safe and efficient navigation of the journey."
     />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon-32x32.png"
-    />
-    <link href="styles/style-reset-vars.css" rel="stylesheet" />
-    <link href="styles/header-layout.css" rel="stylesheet" />
-    <link href="styles/header-style.css" rel="stylesheet" />
-    <link href="styles/crew-layout.css" rel="stylesheet" />
-    <link href="styles/crew-style.css" rel="stylesheet" />
+    <link href="/styles/style-reset-vars.css" rel="stylesheet" />
+    <link href="/styles/header-layout.css" rel="stylesheet" />
+    <link href="/styles/header-style.css" rel="stylesheet" />
+    <link href="/styles/crew-layout.css" rel="stylesheet" />
+    <link href="/styles/crew-style.css" rel="stylesheet" />
 
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body>
     <header id="main-header">
       <div id="logo">
-        <img src="./assets/shared/logo.svg" alt="Logo Space Tourism" />
+        <img src="/assets/shared/logo.svg" alt="Logo Space Tourism" />
       </div>
       <nav id="nav-section">
         <div class="hamburger"></div>
         <ul class="menu">
           <li>
-            <a href="./index.html" class="nav-text-header">
+            <a href="/index.html" class="nav-text-header">
               <b class="b-display-off">00</b>
               Home
               <span class="border"></span>
@@ -63,31 +57,32 @@
     </header>
     <main id="main-content">
       <h5><span class="number-text-h5 h5-opacity">02</span> Meet your crew</h5>
-      <div class="img-container img-container-specialist">
+      <div class="img-container">
         <img
           class="crew-img"
-          src="/assets/crew/image-mark-shuttleworth.webp"
-          alt="Mission Specialist Mark Shuttleworth"
+          src="/assets/crew/image-victor-glover.webp"
+          alt="Pilot Victor Glover"
         />
         <span class="border-img"></span>
       </div>
       <div class="dots">
         <a class="dot" href="crew-commander.html"></a>
-        <a class="dot active" href="crew-specialist.html"></a>
-        <a class="dot" href="crew-pilot.html"></a>
+        <a class="dot" href="crew-specialist.html"></a>
+        <a class="dot active" href="crew-pilot.html"></a>
         <a class="dot" href="crew-engineer.html"></a>
       </div>
       <div class="text-description description-width-commander">
-        <h4 class="profession">Mission Specialist</h4>
-        <h3 class="crew-name">Mark Shuttleworth</h3>
+        <h4 class="profession">Pilot</h4>
+        <h3 class="crew-name">Victor Glover</h3>
         <p class="description">
-          Mark Richard Shuttleworth is the founder and CEO of Canonical, the
-          company behind the Linux-based Ubuntu operating system. Shuttleworth
-          became the first South African to travel to space as a space tourist.
+          Pilot on the first operational flight of the SpaceX Crew Dragon to the
+          International Space Station. Glover is a commander in the U.S. Navy
+          where he pilots an F/A-18.He was a crew member of Expedition 64, and
+          served as a station systems flight engineer.
         </p>
       </div>
     </main>
 
-    <script src="app.js"></script>
+    <script src="/app.js"></script>
   </body>
 </html>

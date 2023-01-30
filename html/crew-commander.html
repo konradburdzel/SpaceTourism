@@ -5,33 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Engineer, a specialist in space technology and spacecraft systems, responsible for ensuring the technical reliability and safety of the space tourism mission."
+      content="Commander, the leader of a space tourism mission, responsible for the safety and success of the journey and the experience of the tourists."
     />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon-32x32.png"
-    />
-    <link href="styles/style-reset-vars.css" rel="stylesheet" />
-    <link href="styles/header-layout.css" rel="stylesheet" />
-    <link href="styles/header-style.css" rel="stylesheet" />
-    <link href="styles/crew-layout.css" rel="stylesheet" />
-    <link href="styles/crew-style.css" rel="stylesheet" />
+    <link href="/styles/style-reset-vars.css" rel="stylesheet" />
+    <link href="/styles/header-layout.css" rel="stylesheet" />
+    <link href="/styles/header-style.css" rel="stylesheet" />
+    <link href="/styles/crew-layout.css" rel="stylesheet" />
+    <link href="/styles/crew-style.css" rel="stylesheet" />
 
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body>
     <header id="main-header">
       <div id="logo">
-        <img src="./assets/shared/logo.svg" alt="Logo Space Tourism" />
+        <img src="/assets/shared/logo.svg" alt="Logo Space Tourism" />
       </div>
       <nav id="nav-section">
         <div class="hamburger"></div>
         <ul class="menu">
           <li>
-            <a href="./index.html" class="nav-text-header">
+            <a href="/index.html" class="nav-text-header">
               <b class="b-display-off">00</b>
               Home
               <span class="border"></span>
@@ -66,29 +60,28 @@
       <div class="img-container">
         <img
           class="crew-img"
-          src="/assets/crew/image-anousheh-ansari.webp"
-          alt="Flight Engineer Anousheh Ansari"
+          src="/assets/crew/image-douglas-hurley.webp"
+          alt="Commander Douglas Hurley"
         />
         <span class="border-img"></span>
       </div>
       <div class="dots">
-        <a class="dot" href="crew-commander.html"></a>
+        <a class="dot active" href="crew-commander.html"></a>
         <a class="dot" href="crew-specialist.html"></a>
         <a class="dot" href="crew-pilot.html"></a>
-        <a class="dot active" href="crew-engineer.html"></a>
+        <a class="dot" href="crew-engineer.html"></a>
       </div>
       <div class="text-description description-width-commander">
-        <h4 class="profession">Flight Engineer</h4>
-        <h3 class="crew-name">Anousheh Ansari</h3>
+        <h4 class="profession">Commander</h4>
+        <h3 class="crew-name">Douglas Hurley</h3>
         <p class="description">
-          Anousheh Ansari is an Iranian American engineer and co-founder of
-          Prodea Systems. Ansari was the fourth self-funded space tourist, the
-          first self-funded woman to fly to the ISS, and the first Iranian in
-          space.
+          Douglas Gerald Hurley is an American engineer, former Marine Corps
+          pilot and former NASA astronaut. He launched into space for the third
+          time as commander of Crew Dragon Demo-2.
         </p>
       </div>
     </main>
 
-    <script src="app.js"></script>
+    <script src="/app.js"></script>
   </body>
 </html>
